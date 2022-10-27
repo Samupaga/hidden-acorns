@@ -4,26 +4,30 @@ import { Header, Footer, Grid } from './components';
 
 export default function App() {
   return (
-    <View style={{flex: 1}}>
+      <View style={{flex:1, backgroundColor:'#f7b538'}}>
+        <View>
+          <Header></Header>
+        </View>
 
-      <View>
-        <Header></Header>
+        {/* <View style={styles.container}>
+          <Text>Here is where I build the game</Text>
+          <StatusBar style="auto" />
+        </View> */}
+        <View style={{flex:1, justifyContent:'center'}}>
+          <View style={{flex:1, flexWrap:'wrap', flexDirection:'row', justifyContent:'space-evenly'}}>
+            <Grid></Grid>
+          </View>
+        </View>
+
+        <View style={{flexDirection:'row', justifyContent:'space-evenly'}}>
+          <Text>Timer</Text>
+          <Text>Score</Text>
+        </View>
+
+        <View>
+          <Footer></Footer>
+        </View>
       </View>
-
-      {/* <View style={styles.container}>
-        <Text>Here is where I build the game</Text>
-        <StatusBar style="auto" />
-      </View> */}
-
-      <View style={{flex:1, flexWrap:'wrap', flexDirection:'row', backgroundColor:'#f7b538'}}>
-        <Grid></Grid>
-      </View>
-
-      <View>
-        <Footer></Footer>
-      </View>
-
-    </View>
 
   );
 }
