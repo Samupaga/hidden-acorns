@@ -3,7 +3,7 @@ import { StyleSheet, View, Text } from 'react-native';
 export default function Header() { 
     return (
         <View style={styles.container}>
-            <Text style={styles.text}>Find the Nuts & Seeds</Text>
+            <Text style={styles.text}>Fibre Quest</Text>
         </View> 
     ); 
 };

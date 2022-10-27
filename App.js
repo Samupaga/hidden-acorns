@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import { Header, Footer } from './components';
+import { Header, Footer, Grid } from './components';
 
 export default function App() {
   return (
@@ -10,9 +10,13 @@ export default function App() {
         <Header></Header>
       </View>
 
-      <View style={styles.container}>
+      {/* <View style={styles.container}>
         <Text>Here is where I build the game</Text>
         <StatusBar style="auto" />
+      </View> */}
+
+      <View style={{flex:1, flexWrap:'wrap', flexDirection:'row', backgroundColor:'#f7b538'}}>
+        <Grid></Grid>
       </View>
 
       <View>
@@ -20,8 +24,6 @@ export default function App() {
       </View>
 
     </View>
-
-    
 
   );
 }
@@ -31,9 +33,15 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
+    // justifyContent: 'center',
     backgroundColor:'#f7b538'
   },
+  // app: {
+  //   marginHorizontal: "auto",
+  //   width: 400,
+  //   flexDirection: "row",
+  //   flexWrap: "wrap"
+  // }
 });
 
 
